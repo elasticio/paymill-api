@@ -1,6 +1,6 @@
 # Paymill API Description
 
-This project contains a Swagger API for Paymill - the most innovative payment-as-a-service provider.
+This project contains a Swagger API for [Paymill](http://paymill.com) - the most innovative payment-as-a-service provider.
 Before going into the description two words about **Swagger**:
 
 ## Swagger
