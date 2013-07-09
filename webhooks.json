@@ -13,6 +13,7 @@
                     "summary": "Register Webhook",
                     "responseClass": "WebhookResponse",
                     "nickname": "registerWebhook",
+                    "subscribe": "newWebhook",
                     "parameters": [
                         {
                             "name": "url",
@@ -43,6 +44,7 @@
                     "summary": "Remove Webhook",
                     "responseClass": "void",
                     "nickname": "removeWebhook",
+                    "unsubscribe": "newWebhook",
                     "parameters": [
                         {
                             "name": "id",
