@@ -1,0 +1,25 @@
+{
+    "apiVersion": "v2",
+    "description": "PAYMILL - the easy and quick way to accept online credit card payment!",
+    "swaggerVersion": "1.1",
+    "basePath": "Register Webhook",
+    "apis": [
+        {
+            "path": "/webhooks",
+            "description": "Webhook resources"
+        }
+    ],
+    "authentication": {
+        "type": "basic",
+
+        "parameters": [
+            {
+                "name": "username",
+                "description": "User Name",
+                "paramType": "custom",
+                "required": true,
+                "dataType": "string"
+            }
+        ]
+    }
+}

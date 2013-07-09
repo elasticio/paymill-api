@@ -1,0 +1,88 @@
+{
+    "apiVersion": "v2",
+    "swaggerVersion": "1.1",
+    "basePath": "https://api.paymill.com/v2/",
+    "resourcePath": "/webhooks",
+    "apis": [
+        {
+            "path": "/webhooks",
+            "description": "Webhook resources",
+            "operations": [
+                {
+                    "httpMethod": "POST",
+                    "summary": "Register Webhook",
+                    "responseClass": "WebhookResponse",
+                    "nickname": "registerWebhook",
+                    "parameters": [
+                        {
+                            "name": "url",
+                            "description": "Webhook URL",
+                            "paramType": "body",
+                            "required": true,
+                            "allowMultiple": false,
+                            "dataType": "string"
+                        },
+                        {
+                            "name": "event_types",
+                            "description": "Event types",
+                            "paramType": "body",
+                            "required": true,
+                            "allowMultiple": false,
+                            "dataType": "string"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "path": "/webhooks/{id}",
+            "description": "Webhook resources",
+            "operations": [
+                {
+                    "httpMethod": "DELETE",
+                    "summary": "Remove Webhook",
+                    "responseClass": "void",
+                    "nickname": "removeWebhook",
+                    "parameters": [
+                        {
+                            "name": "id",
+                            "description": "Webhook ID",
+                            "paramType": "path",
+                            "required": true,
+                            "allowMultiple": false,
+                            "dataType": "string"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "models": {
+        "WebhookResponse": {
+            "id": "WebhookResponse",
+            "properties": {
+                "data": {
+                    "title": "Data",
+                    "type": "array",
+                    "properties": {
+                        "id": {
+                            "title": "Id",
+                            "type": "string",
+                            "required":true
+                        },
+                        "url": {
+                            "title": "Version",
+                            "type": "number",
+                            "required":true
+                        },
+                        "livemode": {
+                            "title": "Live Mode",
+                            "type": "boolean",
+                            "required":true
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
