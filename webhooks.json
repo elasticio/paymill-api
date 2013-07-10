@@ -29,7 +29,13 @@
                             "paramType": "body",
                             "required": true,
                             "allowMultiple": false,
-                            "dataType": "string"
+                            "dataType": "string",
+                            "allowableValues":{
+                                "valueType":"LIST",
+                                "values":[
+                                    "transaction.created"
+                                ]
+                            }
                         }
                     ]
                 }
