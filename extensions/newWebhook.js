@@ -4,6 +4,8 @@ var fs = require("fs");
 exports.getMetaModel = function (cfg, cb) {
     var eventType = cfg['event_types'];
 
+    console.log("Retrieving metadata for event type: %s", eventType);
+
     var splitted = eventType.split(".");
 
     if (splitted.length !== 2) {
@@ -20,14 +22,16 @@ exports.getMetaModel = function (cfg, cb) {
         var models = JSON.parse(content).models;
 
         var model = _.find(models, function (model) {
-            return model.id === modelId;
+            return model.id.toLowerCase() === modelId;
         });
 
         if (model) {
+            console.log("Creating metadata for model: %s", model.id);
+
             return cb(null, createMetaModel(model));
         }
 
-        cb();
+        cb(null, {});
     });
 };
 
