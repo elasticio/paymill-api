@@ -21,5 +21,33 @@
                 "dataType": "string"
             }
         ]
+    },
+    "models": {
+        "Transaction": {
+            "id": "Transaction",
+            "type": "object",
+            "properties": {
+                "id": {
+                    "title": "Id",
+                    "type": "string",
+                    "required":true
+                },
+                "amount": {
+                    "title": "Amount",
+                    "type": "int",
+                    "required":true
+                },
+                "amount": {
+                    "title": "Amount",
+                    "type": "int",
+                    "required":true
+                },
+                "currency": {
+                    "title": "Currency",
+                    "type": "string",
+                    "required":true
+                }
+            }
+        }
     }
 }
