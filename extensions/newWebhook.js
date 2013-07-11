@@ -12,7 +12,7 @@ exports.getMetaModel = function (cfg, cb) {
 
     var modelId = splitted[0];
 
-    fs.readFile(__dirname + '../api-docs.json', function (err, content) {
+    fs.readFile(__dirname + '/../api-docs.json', function (err, content) {
         if (err) {
             return cb(err);
         }
