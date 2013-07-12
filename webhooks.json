@@ -21,7 +21,8 @@
                             "paramType": "body",
                             "required": true,
                             "allowMultiple": false,
-                            "dataType": "string"
+                            "dataType": "string",
+                            "viewClass": "WebHookURLView"
                         },
                         {
                             "name": "event_types",
@@ -87,6 +88,33 @@
                             "title": "Live Mode",
                             "type": "boolean",
                             "required":true
+                        },
+                        "client": {
+                            "type": "object",
+                            "properties" : {
+                                "id": {
+                                    "title": "Id",
+                                    "type": "string",
+                                    "required":true
+                                },
+                                "email": {
+                                    "title": "Email",
+                                    "type": "string",
+                                    "required":false
+                                },
+                                "created_at": {
+                                    "title": "Created At",
+                                    "type": "int",
+                                    "required":true
+                                },
+                                "updated_at": {
+                                    "title": "Updated At",
+                                    "type": "int",
+                                    "required":true
+                                }
+
+                            },
+                            "required":false
                         }
                     }
                 }
