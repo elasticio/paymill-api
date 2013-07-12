@@ -19,7 +19,7 @@
                             "name": "url",
                             "description": "Webhook URL",
                             "paramType": "body",
-                            "required": true,
+                            "required": false,
                             "allowMultiple": false,
                             "dataType": "string",
                             "viewClass": "WebHookURLView"
@@ -34,7 +34,8 @@
                             "allowableValues":{
                                 "valueType":"LIST",
                                 "values":[
-                                    "transaction.created"
+                                    "transaction.created",
+                                    "subscription.created"
                                 ]
                             }
                         }
