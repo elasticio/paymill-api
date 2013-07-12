@@ -48,6 +48,42 @@
                     "required":true
                 }
             }
+        },
+        "Subscription": {
+            "id": "Subscription",
+            "type": "object",
+            "properties": {
+                "id": {
+                    "title": "Id",
+                    "type": "string",
+                    "required":true
+                },
+                "livemode": {
+                    "title": "Live Mode",
+                    "type": "boolean",
+                    "required":true
+                },
+                "cancel_at_period_end": {
+                    "title": "Canceled At Period End",
+                    "type": "boolean",
+                    "required":true
+                },
+                "next_capture_at": {
+                    "title": "Next Capture At",
+                    "type": "int",
+                    "required":true
+                },
+                "created_at": {
+                    "title": "Created At",
+                    "type": "int",
+                    "required":true
+                },
+                "updated_at": {
+                    "title": "Updated At",
+                    "type": "int",
+                    "required":true
+                }
+            }
         }
     }
 }
