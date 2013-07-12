@@ -22,7 +22,7 @@
                             "required": false,
                             "allowMultiple": false,
                             "dataType": "string",
-                            "viewClass": "WebHookURLView"
+                            "viewClass": "HiddenFieldView"
                         },
                         {
                             "name": "event_types",
