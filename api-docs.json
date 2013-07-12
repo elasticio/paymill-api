@@ -14,8 +14,8 @@
 
         "parameters": [
             {
-                "name": "username",
-                "description": "User Name",
+                "name": "apiKey",
+                "description": "API Key",
                 "paramType": "custom",
                 "required": true,
                 "dataType": "string"
