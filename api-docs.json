@@ -2,7 +2,7 @@
     "apiVersion": "v2",
     "description": "PAYMILL - the easy and quick way to accept online credit card payment!",
     "swaggerVersion": "1.1",
-    "basePath": "Register Webhook",
+    "basePath": "https://api.paymill.com/v2",
     "apis": [
         {
             "path": "/webhooks",
