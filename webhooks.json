@@ -15,6 +15,9 @@
                     "nickname": "registerWebhook",
                     "subscribe": "newWebhook",
                     "contentType": "application/x-www-form-urlencoded",
+                    "snapshot" : {
+                        "id": "data.id"
+                    },
                     "parameters": [
                         {
                             "name": "url",
@@ -71,10 +74,11 @@
     "models": {
         "WebhookResponse": {
             "id": "WebhookResponse",
+            "type": "object",
             "properties": {
                 "data": {
                     "title": "Data",
-                    "type": "array",
+                    "type": "object",
                     "properties": {
                         "id": {
                             "title": "Id",
