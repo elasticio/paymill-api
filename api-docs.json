@@ -10,15 +10,15 @@
         }
     ],
     "authentication": {
-        "type": "basic",
-
+        "type": "custom",
         "parameters": [
             {
-                "name": "apiKey",
-                "description": "API Key",
+                "name": "oauth",
+                "description": "Authentication",
                 "paramType": "custom",
                 "required": true,
-                "dataType": "string"
+                "dataType": "string",
+                "viewClass": "OAuthFieldView"
             }
         ]
     },
