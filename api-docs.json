@@ -20,7 +20,16 @@
                 "dataType": "string",
                 "viewClass": "OAuthFieldView"
             }
-        ]
+        ],
+        "oauth2":{
+            "client_id":"{{PAYMILL_KEY}}",
+            "client_secret":"{{PAYMILL_SECRET}}",
+            "auth_uri":"https://connect.paymill.com/authorize",
+            "token_uri":"https://connect.paymill.com/token",
+            "scopes": [
+                "webhooks_rw"
+            ]
+        }
     },
     "models": {
         "Transaction": {
