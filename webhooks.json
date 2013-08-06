@@ -5,6 +5,18 @@
     "resourcePath": "/webhooks",
     "apis": [
         {
+            "path": "{{WEBHOOK_URI}}",
+            "description": "Webhook resources",
+            "operations": [
+                {
+                    "httpMethod": "POST",
+                    "summary": "Register Webhook",
+                    "responseClass": "dynamic",
+                    "nickname": "newWebhook"
+                }
+            ]
+        },
+        {
             "path": "/webhooks",
             "description": "Webhook resources",
             "operations": [
