@@ -51,7 +51,13 @@
                                 "valueType":"LIST",
                                 "values":[
                                     "transaction.created",
-                                    "subscription.created"
+                                    "transaction.succeeded",
+                                    "transaction.failed",
+                                    "subscription.created",
+                                    "subscription.updated",
+                                    "subscription.deleted",
+                                    "subscription.succeeded",
+                                    "subscription.failed"
                                 ]
                             }
                         }
